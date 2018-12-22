@@ -44,20 +44,6 @@ trait Shortable
     }
 
     /**
-     * Clone the model into a new, non-existing instance.
-     *
-     * @param  array|null $except
-     * @return \Illuminate\Database\Eloquent\Model
-     */
-    public function replicate(array $except = null)
-    {
-        $instance = parent::replicate($except);
-        (new ShortService())->short($instance, true);
-        return $instance;
-    }
-
-
-    /**
      * Query scope for finding shorts, used to determine uniqueness.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query

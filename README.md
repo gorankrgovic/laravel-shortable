@@ -75,22 +75,6 @@ $video->short_url;
 
 Or whatever you have called it.
 
-Also note that if you are replicating your models using Eloquent's replicate() method, the package will automatically re-short the model afterwards to ensure uniqueness.
-
-```php
-
-$video = new Video([
-    'whateve' => 'My Awesome Video',
-]);
-
-$video->save();
-//  "yUibYisk637Nn"
-
-
-$newVideo = $video->replicate();
-//  "yUibYisk637Nn-1"
-```
-
 ## The ShortService Class
 
 All the logic to generate slugs is handled by the `\Gorankrgovic\LaravelShortable\Services\ShortService` class.
