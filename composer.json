@@ -19,15 +19,15 @@
   ],
   "require": {
     "php": "^7.0",
-    "illuminate/config": "~5.7.0",
-    "illuminate/database": "~5.7.0",
-    "illuminate/support": "~5.7.0"
+    "illuminate/config": "~5.7.0|~5.8.0",
+    "illuminate/database": "~5.7.0|~5.8.0",
+    "illuminate/support": "~5.7.0|~5.8.0"
   },
   "require-dev": {
     "mockery/mockery": "^0.9.4",
     "orchestra/database": "3.7.x-dev",
     "orchestra/testbench": "v3.7.0",
-    "phpunit/phpunit": "~7.0",
+    "phpunit/phpunit": "^6.0|^7.0|^7.5",
     "limedeck/phpunit-detailed-printer": "^4.1"
   },
   "autoload": {
